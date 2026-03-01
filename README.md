@@ -5,7 +5,7 @@ Este guia descreve a instalação e remoção do **K3s** em sistemas Linux, incl
 ## Instalar o K3s
 
 ```bash
-curl -sfL https://get.k3s.io | sh -s - --disable traefik --disable servicelb --write-kubeconfig-mode 644
+curl -sfL https://get.k3s.io | sh -s - --disable traefik --disable servicelb
 mkdir -p ~/.kube
 sudo cp /etc/rancher/k3s/k3s.yaml ~/.kube/config
 sudo chown $USER:$USER ~/.kube/config
